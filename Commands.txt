@@ -1,0 +1,15 @@
+apt-get install -y docker.io / yum install docker
+sudo service docker start
+docker -v
+docker version
+docker info 
+docker run -it ubuntu /bin/bash
+docker ps -a
+docker start #image_id#
+docker stop #image_id#
+docker restart #image_id#
+docker attach #image_id#
+docker commit #image_id# $new_image_name$
+docker images --tree
+docker history $image_name$
+docker save -o /tmp/$image_name$.tar $image_name$
